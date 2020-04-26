@@ -1,5 +1,5 @@
 
-.background {
+body {
     background-image: url("../images/textured_paper.png");
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -7,14 +7,22 @@
     background-color: #e9e5e5;
 }
 
+.container {
+    background-image: url("../images/textured_paper.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+
 header {
     background-color: #ffffff;
-    padding: 40px;
+    padding: 40px, 0px, 40px, 20px;
     border-bottom: solid;
     border-color: #cccccc;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
     font-family: 'Georgia', Times, Times, serif;
 }
+
 h1 {
     background-color: #4aaaa5;
     color: white;
@@ -23,8 +31,6 @@ h1 {
     float: left;
     position: relative;
     padding: 10px;
-    top: -27px;
-    left: 10%;
 }
 
 nav {
@@ -32,6 +38,7 @@ nav {
     float: right;
     position: relative;
     display: flex;
+    margin-top: 25px;
 }
 
 a:link, a:visited {
@@ -63,18 +70,19 @@ a:active {
 }
 
 
-.aboutMe .row {
+#aboutMe {
     border-bottom: solid;
     border-color: #cccccc;
 }
 
-.aboveFooter .row {
-    background-image: url("../images/textured_paper.png");
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: 100% 100%;
-    background-color: #e9e5e5;
-    padding: 250px;
+#aboutMe h2 {
+    background-color: white;
+    color: #4aaaa5;
+    font-size: 30px;
+    font-weight: bold;
+    float: left;
+    position: relative;
+    padding: 10px 0px 0px 10px;
 }
 
 h2 {
@@ -84,9 +92,9 @@ h2 {
     font-size: 30px;
 }
 
-.bio .row {
+#bio {
     background-color: #ffffff;
-    padding: 20px 20px 10px 20px;
+    padding: 20px 20px 20px 20px;
 }
 
 p {
@@ -95,10 +103,9 @@ p {
 
 .clearfix img {
     display: block;
-    width: 45%;
+    width: 20%;
     float: left;
-    padding: 0px 0px 70px 10px;
-    transform: rotate(270deg);
+    padding: 0px 20px 10px 10px;
 }
 
 .clearfix {
@@ -154,5 +161,71 @@ input {
     text-align: center;
 }
 
+
+@media only screen and (max-width: 800px) {
+
+    .row {
+        padding: 10;
+    }
+
+    #header-row {
+        margin: 10px 0px 0px 10px;
+    }
+
+    h1 {
+        background-color: #4aaaa5;
+        color: white;
+        font-size: 30px;
+        font-weight: bold;
+        float: none;
+        width: auto;
+        padding: 0px 0px 0px 20%;
+    }
+
+    nav {
+        color:#cccccc;
+        float: right;
+        position: relative;
+        display: flex;
+        margin-top: 10px;
+        padding: 0px 27% 0px 0px;
+    }
+
+    #aboutMe {
+        margin: 0px 0px -10px 0px;
+    }
+
+    #aboutMe h2 {
+        background-color: white;
+        color: #4aaaa5;
+        font-size: 30px;
+        font-weight: bold;
+        float: left;
+        position: center; 
+        padding: 0px 0px 0px 35%;
+    }
+
+    #bio {
+        background-color: #ffffff;
+        padding: 20px 20px 20px 20px;
+        margin: 10px 0px 10px 0px;
+    }
+
+    footer {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        background-color: #666666;
+        border-top: 8px solid #4aaaa5;
+        padding: 20px;
+        font-size: 8px;
+        color: black;
+        text-align: center;
+        color: #ffffff;
+        margin-top: 10px;
+    }
+
+}
 
 
